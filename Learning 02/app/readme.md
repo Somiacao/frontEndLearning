@@ -38,8 +38,33 @@ webpack --progress --colors --watch
 安装webpack-dev-derver
 ```bash
 # 安装
-npm insatll
+npm insatll webpack-dev-server -g
 
 # 运行
 webpack-dev-server --progress --colors
 ```
+
+# webpack4 + san 快速构建一个项目
+## 安装一些需要的依赖
+```
+npm install babel-core
+npm install babel-loader
+npm install babel-preset-env
+npm instaall css-loader
+npm install file-loader
+npm install san-loader
+npm install style-loader
+npm install html-loader
+npm install html-webpack-plugin
+npm install webpack-cli
+npm intsall webpack-dev-server
+npm install webpack-merge
+```
+## 配置文件
+* 新建一个config文件夹，配置以下文件webpack.common.js、webpack.dev.js和webpack.prod.js
+* 在根目录创建 .babelrc文件
+* 修改package.json文件，写入启动命令
+* 根目录下新建 indexsan.html
+* 新建src文件夹，新建main.js文件和组件Hello.san
+* 运行yarn start，在http://localhost:8080/indexsan.html地址下可看到如下效果：
+![png](image/p1.png)

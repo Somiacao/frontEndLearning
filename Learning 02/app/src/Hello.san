@@ -1,0 +1,33 @@
+<template>
+    <div class="hello">
+        <div class="content">
+            <div class="title">
+                <div class="color">你好呀 {{msg}}</div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        initData () {
+            return {
+                msg: '张政豪'
+            }
+        }
+    }
+</script>
+
+<style>
+    .color {
+        width: fit-content;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(to right, deeppink, dodgerblue); 
+        -webkit-background-clip: text; 
+        color: transparent;
+    }
+</style>
