@@ -46,11 +46,11 @@ webpack-dev-server --progress --colors
 
 # webpack4 + san 快速构建一个项目
 ## 安装一些需要的依赖
-```
+```bash
 npm install babel-core
 npm install babel-loader
 npm install babel-preset-env
-npm instaall css-loader
+npm install css-loader
 npm install file-loader
 npm install san-loader
 npm install style-loader
